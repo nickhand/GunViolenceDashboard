@@ -12,7 +12,7 @@ export async function githubFetch(jsonFilename: string): Promise<any> {
    */
 
   const REPO =
-    "https://raw.githubusercontent.com/PhiladelphiaController/gun-violence-dashboard-data";
+    "https://raw.githubusercontent.com/nickhand/gun-violence-dashboard-data";
   const response = await fetch(
     `${REPO}/master/gun_violence_dashboard_data/data/processed/${jsonFilename}`
   );

@@ -2,7 +2,7 @@
   <div class="header-message-wrapper w-100">
     <!-- Title -->
     <div class="header-message pl-2 pr-2">
-      Mapping Philadelphia's Gun Violence Crisis
+      Mapping Philadelphia's Gun Violence
     </div>
 
     <div>
@@ -21,7 +21,7 @@
           class="header-submessage pl-5 pr-5"
           v-if="selectedYear == currentYear"
         >
-          To date, there have been
+          There have been
           <span class="fatal"> {{ homicideTotal }} homicides</span> in
           <span class="date-color">{{ selectedYear }}</span
           >, {{ homicideChange }} from {{ selectedYear - 1 }}.
@@ -51,9 +51,9 @@
           <template
             v-if="selectedYear === currentYear || selectedYear === null"
           >
-            as of
+            so far in 
             <span class="date-color"
-              >{{ formattedlatestDataDate }}, {{ currentYear }}.
+              >{{ currentYear }}.
             </span>
           </template>
           <template v-else>

@@ -11,7 +11,9 @@
 
         <!-- Disclaimer -->
         <p>
-          This application was developed by the City Controller's Office using
+          I originally developed this application for the Philadelphia City 
+          Controller's Office. After leaving the office, I've migrated 
+          the application to this personal website. The dashboard relies on
           publicly available data from the City of Philadelphia and
           Pennsylvania's Unified Judicial System. The data is provided for
           informational purposes only in accordance with the office's goals of
@@ -94,30 +96,30 @@
 
         <p>
           The software behind this application is publicly available on the
-          <a href="https://github.com/PhilaController" target="blank_"
-            >Controller's Office's GitHub:</a
+          <a href="https://github.com/nickhand" target="blank_"
+            >my GitHub:</a
           >:
         </p>
         <ul>
           <li>
             <a
-              href="https://github.com/PhilaController/GunViolenceDashboard"
+              href="https://github.com/nickhand/GunViolenceDashboard"
               target="blank_"
             >
               <i class="fas fa-external-link-alt mr-2"></i>
               <span class="url-break">
-                https://github.com/PhilaController/GunViolenceDashboard</span
+                https://github.com/nickhand/GunViolenceDashboard</span
               ></a
             >
           </li>
           <li>
             <a
-              href="https://github.com/PhilaController/gun-violence-dashboard-data"
+              href="https://github.com/nickhand/gun-violence-dashboard-data"
               target="blank_"
             >
               <i class="fas fa-external-link-alt mr-2"></i>
               <span class="url-break">
-                https://github.com/PhilaController/gun-violence-dashboard-data
+                https://github.com/nickhand/gun-violence-dashboard-data
               </span>
             </a>
           </li>
@@ -130,16 +132,8 @@
         <p>
           If you've noticed a bug in this application or have suggestions for
           how to make it better, please send an email to
-          <a href="mailto:controller@phila.gov">controller@phila.gov</a> to let
-          us know. You can also send
-          <a href="https://twitter.com/PhilaController" target="blank_"
-            >@PhilaController</a
-          >
-          a tweet or open up a new
-          <a
-            href="https://github.com/PhilaController/gun-violence-dashboard/issues"
-            >GitHub Issue</a
-          >.
+          <a href="mailto:nicholas.adam.hand@gmail.com">nicholas.adam.hand@gmail.com</a> to let
+          me know.
         </p>
       </div>
     </div>
