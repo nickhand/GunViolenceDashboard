@@ -43,8 +43,8 @@
           dark
           :ripple="false"
         >
-          <i class="fas fa-undo"></i
-          ><span class="ml-3">Reset All Filters</span></v-btn
+          <font-awesome-icon icon="fa-undo" />
+          <span class="ml-3">Reset All Filters</span></v-btn
         >
       </div>
     </div>
@@ -311,6 +311,7 @@ import VueSlider from "vue-slider-component";
 import $ from "jquery";
 import { format } from "d3-format";
 import qs from "qs";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 /**
  * Utility to decode the query string
@@ -348,7 +349,12 @@ function queryStringDecoder(str: string, decoder: any, charset: string) {
 type indexable = { [index: string]: any };
 
 export default defineComponent({
-  components: { VueSlider, SliderHistogramChart, DownloadButton },
+  components: {
+    VueSlider,
+    SliderHistogramChart,
+    DownloadButton,
+    FontAwesomeIcon,
+  },
   props: {
     /**
      * Array of configuration options different map filters
@@ -671,11 +677,19 @@ export default defineComponent({
       }
     },
 
+    width(element: HTMLElement): number | null {
+      if (element === null) return null;
+      const computedStyle = window.getComputedStyle(element);
+      return parseFloat(computedStyle.width);
+    },
+
     /**
      * Based on sidebar width, get the width of the histogram
      */
     getHistogramWidth() {
-      let width = $(".sidebar-inner-content").width();
+      let width = this.width(
+        document.querySelector(".sidebar-inner-content") as HTMLElement
+      );
       if (width) return (width - 48) * 0.85;
     },
 

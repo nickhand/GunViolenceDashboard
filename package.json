@@ -8,6 +8,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/vue-fontawesome": "2",
     "apexcharts": "3.36.3",
     "core-js": "^3.8.3",
     "crossfilter2": "^1.5.4",
@@ -30,7 +33,6 @@
   },
   "devDependencies": {
     "@mdi/js": "^7.1.96",
-    "@types/node": "14.14.17",
     "@types/d3-array": "^3.0.3",
     "@types/d3-axis": "^3.0.2",
     "@types/d3-fetch": "^3.0.1",
@@ -41,6 +43,7 @@
     "@types/d3-time-format": "^4.0.0",
     "@types/geojson": "^7946.0.10",
     "@types/jquery": "^3.5.14",
+    "@types/node": "14.14.17",
     "@types/papaparse": "^5.3.5",
     "@types/vue-router": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",

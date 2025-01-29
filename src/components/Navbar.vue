@@ -20,7 +20,7 @@
       title="About page"
       @click="$router.push('/about')"
     >
-      <i class="fas fa-info fa-lg"></i>
+      <font-awesome-icon icon="fa-info" size="lg" />
     </v-btn>
 
     <!-- Back button -->
@@ -33,7 +33,7 @@
       :ripple="false"
       @click="$router.push({ path: '/', query: { year: selectedYear } })"
     >
-      <i class="fas fa-arrow-left mr-1"></i>
+      <font-awesome-icon icon="fa-arrow-left" class="mr-1" />
       <span>Back</span>
     </v-btn>
 
@@ -67,10 +67,12 @@
 </template>
 
 <script>
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { defineComponent } from "vue";
 
 export default defineComponent({
   props: ["dataYears", "selectedYear", "showOverlay"],
+  components: { FontAwesomeIcon },
   data() {
     return { value: null };
   },

@@ -11,9 +11,9 @@
 
         <!-- Disclaimer -->
         <p>
-          I originally developed this application for the Philadelphia City 
-          Controller's Office. After leaving the office, I've migrated 
-          the application to this personal website. The dashboard relies on
+          This application was originally developed by Nick Hand for the
+          Philadelphia City Controller's Office. After leaving the office, it
+          was migrated to this personal website. The dashboard relies on
           publicly available data from the City of Philadelphia and
           Pennsylvania's Unified Judicial System. The data is provided for
           informational purposes only in accordance with the office's goals of
@@ -26,8 +26,10 @@
             <a
               href="https://www.opendataphilly.org/dataset/shooting-victims"
               target="blank_"
-              ><i class="fas fa-external-link-alt"></i
-              ><span class="ml-2">Shooting victims data</span></a
+              ><font-awesome-icon icon="fa-external-link-alt" /><span
+                class="ml-2"
+                >Shooting victims data</span
+              ></a
             >
             from the City of Philadelphia's open data program, posted on
             OpenDataPhilly.org
@@ -36,15 +38,17 @@
             <a
               href="https://www.phillypolice.com/crime-maps-stats/"
               target="blank_"
-              ><i class="fas fa-external-link-alt"></i>
+              ><font-awesome-icon icon="fa-external-link-alt" />
               <span class="ml-2">Total homicide count</span></a
             >
             from the Philadelphia Police Department's crime statistics website
           </li>
           <li>
             <a href="https://ujsportal.pacourts.us/CaseSearch" target="blank_"
-              ><i class="fas fa-external-link-alt"></i
-              ><span class="ml-2">Information on court cases</span></a
+              ><font-awesome-icon icon="fa-external-link-alt" /><span
+                class="ml-2"
+                >Information on court cases</span
+              ></a
             >
             from the web portal for the Unified Judicial System of Pennsylvania
           </li>
@@ -96,9 +100,7 @@
 
         <p>
           The software behind this application is publicly available on the
-          <a href="https://github.com/nickhand" target="blank_"
-            >my GitHub:</a
-          >:
+          <a href="https://github.com/nickhand" target="blank_">my GitHub:</a>:
         </p>
         <ul>
           <li>
@@ -106,7 +108,7 @@
               href="https://github.com/nickhand/GunViolenceDashboard"
               target="blank_"
             >
-              <i class="fas fa-external-link-alt mr-2"></i>
+              <font-awesome-icon icon="fa-external-link-alt" class="mr-2" />
               <span class="url-break">
                 https://github.com/nickhand/GunViolenceDashboard</span
               ></a
@@ -117,7 +119,7 @@
               href="https://github.com/nickhand/gun-violence-dashboard-data"
               target="blank_"
             >
-              <i class="fas fa-external-link-alt mr-2"></i>
+              <font-awesome-icon icon="fa-external-link-alt" class="mr-2" />
               <span class="url-break">
                 https://github.com/nickhand/gun-violence-dashboard-data
               </span>
@@ -132,8 +134,10 @@
         <p>
           If you've noticed a bug in this application or have suggestions for
           how to make it better, please send an email to
-          <a href="mailto:nicholas.adam.hand@gmail.com">nicholas.adam.hand@gmail.com</a> to let
-          me know.
+          <a href="mailto:nicholas.adam.hand@gmail.com"
+            >nicholas.adam.hand@gmail.com</a
+          >
+          to let me know.
         </p>
       </div>
     </div>
@@ -143,14 +147,11 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import Navbar from "@/components/Navbar.vue";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 export default defineComponent({
   props: { dataYears: { type: Array, required: true } },
-  components: { Navbar },
-  mounted() {
-    // Convert icons explicitly
-    if (window.FontAwesome) window.FontAwesome.dom.i2svg();
-  },
+  components: { Navbar, FontAwesomeIcon },
 });
 </script>
 

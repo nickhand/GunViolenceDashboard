@@ -48,13 +48,13 @@
           and
           <span class="fatal">{{ formatNumber(fatal) }} fatal</span>
           shooting victims
-          <template
-            v-if="selectedYear === currentYear || selectedYear === null"
-          >
-            so far in 
-            <span class="date-color"
-              >{{ currentYear }}.
-            </span>
+          <template v-if="selectedYear === currentYear">
+            so far in
+            <span class="date-color">{{ currentYear }}. </span>
+          </template>
+          <template v-else-if="selectedYear === null">
+            since
+            <span class="date-color">{{ minYear }}.</span>
           </template>
           <template v-else>
             in

@@ -11,8 +11,8 @@
         v-bind="attrs"
         v-on="on"
       >
-        <i class="fas fa-download"></i
-        ><span class="ml-3">Download Data</span></v-btn
+        <font-awesome-icon icon="fa-download" />
+        <span class="ml-3">Download Data</span></v-btn
       >
     </template>
 
@@ -87,6 +87,7 @@
 </template>
 
 <script lang="ts">
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { defineComponent, PropType } from "vue";
 
 export default defineComponent({
@@ -96,6 +97,7 @@ export default defineComponent({
      */
     overlayLayerNames: { type: Array as PropType<string[]>, default: () => [] },
   },
+  components: { FontAwesomeIcon },
   data() {
     return {
       /**

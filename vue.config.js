@@ -7,23 +7,13 @@ module.exports = {
     extract: false,
   },
   configureWebpack: {
-    externals: {
-      jquery: "jQuery",
-      $: "jQuery",
-    },
     entry: {
       main: "./src/main.ts",
-      browserSupport: "./src/browserSupport.js",
+      // browserSupport: "./src/browserSupport.js",
     },
     output: {
       filename: "gv-dashboard.[name].[fullhash:7].js",
     },
-    plugins: [
-      new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-      }),
-    ],
     optimization: { splitChunks: false },
   },
   chainWebpack: (config) => {

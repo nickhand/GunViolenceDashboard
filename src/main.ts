@@ -1,6 +1,9 @@
+// Local css first
+import "@/assets/css/style.min.css";
+import "@/assets/css/bootstrap.min.css";
+
 // External
 import Vue from "vue";
-import $ from "jquery"; // Loaded via CDN
 
 // App and router
 import App from "@/App.vue";
@@ -8,33 +11,29 @@ import { getRouter } from "@/plugins/router";
 import vuetify from "@/plugins/vuetify";
 //import store from "@/plugins/store";
 import "@/main.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faInfo,
+  faArrowLeft,
+  faDownload,
+  faUndo,
+  faExternalLinkAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+// Set up fontawesome
+library.add(faInfo, faArrowLeft, faDownload, faUndo, faExternalLinkAlt);
+Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // Don't show tip
 Vue.config.productionTip = false;
 
 // Add FontAwesome to window
-declare global {
-  interface Window {
-    FontAwesome: any;
-  }
-}
-
-// Load and set the HTML template we are using
-const content = $("#main");
-content.html(`
-<div id="app"></div>
-<div class="back-link m-5">
-<a href="https://controller.phila.gov/policy-analysis/reports/">
-  <i class="fas fa-arrow-square-left"></i> Back to All Reports
-</a>
-<p class='help-message mb-5'>
-  Comments or feedback? Please contact
-  <a href="mailto:controller@phila.gov">controller@phila.gov</a>.
-  </p>
-</div>`);
-
-// remove the report button
-$(".entry-header .btn").first().remove();
+// declare global {
+//   interface Window {
+//     FontAwesome: any;
+//   }
+// }
 
 // Initialize
 getRouter().then((router) => {
@@ -47,10 +46,10 @@ getRouter().then((router) => {
 });
 
 // Turn off FA
-$(document).ready(function () {
-  const FA = window.FontAwesome;
-  if (FA) {
-    FA.config.observeMutations = false;
-    FA.config.searchPseudoElements = false;
-  }
-});
+// $(document).ready(function () {
+//   const FA = window.FontAwesome;
+//   if (FA) {
+//     FA.config.observeMutations = false;
+//     FA.config.searchPseudoElements = false;
+//   }
+// });
