@@ -36,7 +36,7 @@
           </li>
           <li>
             <a
-              href="https://www.phillypolice.com/crime-maps-stats/"
+              href="https://www.phillypolice.com/crime-data/crime-statistics/#homicide_numbers"
               target="blank_"
               ><font-awesome-icon icon="fa-external-link-alt" />
               <span class="ml-2">Total homicide count</span></a
