@@ -9,8 +9,9 @@ import Vue from "vue";
 import App from "@/App.vue";
 import { getRouter } from "@/plugins/router";
 import vuetify from "@/plugins/vuetify";
-//import store from "@/plugins/store";
 import "@/main.css";
+
+// Fontawesome
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faInfo,
@@ -27,13 +28,6 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // Don't show tip
 Vue.config.productionTip = false;
-
-// Add FontAwesome to window
-// declare global {
-//   interface Window {
-//     FontAwesome: any;
-//   }
-// }
 
 // Initialize
 getRouter().then((router) => {
