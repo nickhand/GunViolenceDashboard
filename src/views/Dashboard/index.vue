@@ -179,7 +179,7 @@ export default defineComponent({
       this.selectedYear = this.dataYears[0];
 
       // Update the query param in the path
-      this.$router.push({
+      this.$router.replace({
         path: this.$route.fullPath,
         query: { year: this.selectedYear.toString() },
       });

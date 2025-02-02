@@ -286,7 +286,7 @@ export default defineComponent({
       // Update the query params
       let q = Object.assign({}, this.$route.query);
       q["map"] = newVal;
-      this.$router.push({ query: q }).catch((error) => {
+      this.$router.replace({ query: q }).catch((error) => {
         if (error.name !== "NavigationDuplicated") {
           throw error;
         }

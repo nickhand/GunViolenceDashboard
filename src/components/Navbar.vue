@@ -18,7 +18,7 @@
       outlined
       :ripple="false"
       title="About page"
-      @click="$router.push('/about')"
+      @click="$router.replace('/about')"
     >
       <font-awesome-icon icon="fa-info" size="lg" />
     </v-btn>
@@ -31,7 +31,7 @@
       outlined
       dark
       :ripple="false"
-      @click="$router.push({ path: '/', query: { year: selectedYear } })"
+      @click="$router.replace({ path: '/', query: { year: selectedYear } })"
     >
       <font-awesome-icon icon="fa-arrow-left" class="mr-1" />
       <span>Back</span>
@@ -59,7 +59,7 @@
             auto: true,
             'min-width': '90px',
           }"
-          @input="$router.push({ path: '/', query: { year: $event } })"
+          @input="$router.replace({ path: '/', query: { year: $event } })"
         />
       </div>
     </div>

@@ -308,7 +308,6 @@ import {
 
 // External
 import VueSlider from "vue-slider-component";
-import $ from "jquery";
 import { format } from "d3-format";
 import qs from "qs";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
@@ -625,7 +624,7 @@ export default defineComponent({
       if (value !== this.$route.query[key]) {
         // Set and push
         q[key] = value;
-        this.$router.push({ query: q }).catch((error) => {
+        this.$router.replace({ query: q }).catch((error) => {
           if (error.name !== "NavigationDuplicated") {
             throw error;
           }
@@ -643,7 +642,7 @@ export default defineComponent({
       // Update if it exists
       if (q[key]) {
         delete q[key];
-        this.$router.push({ query: q }).catch((error) => {
+        this.$router.replace({ query: q }).catch((error) => {
           if (error.name !== "NavigationDuplicated") {
             throw error;
           }
