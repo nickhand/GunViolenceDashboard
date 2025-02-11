@@ -853,7 +853,7 @@ export default defineComponent({
      */
     async fetchData(year: number): Promise<ShootingVictimsGeoJson> {
       // Fetch the data from AWS
-      const url = "https://gun-violence-dashboard.s3.amazonaws.com/";
+      const url = "https://philly-gun-violence-map.s3.amazonaws.com/";
       const response = await fetch(url + `shootings_${year}.json`);
       let data = await response.json();
 
