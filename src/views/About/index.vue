@@ -15,7 +15,7 @@
           Philadelphia City Controller's Office. After leaving the office, it
           was migrated to his personal website. The dashboard relies on publicly
           available data from the City of Philadelphia and Pennsylvania's
-          Unified Judicial System.
+          Unified Judicial System. The data sources are:
         </p>
 
         <!-- List original data sources -->
