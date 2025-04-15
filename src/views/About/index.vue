@@ -13,11 +13,9 @@
         <p>
           This application was originally developed by Nick Hand for the
           Philadelphia City Controller's Office. After leaving the office, it
-          was migrated to this personal website. The dashboard relies on
-          publicly available data from the City of Philadelphia and
-          Pennsylvania's Unified Judicial System. The data is provided for
-          informational purposes only in accordance with the office's goals of
-          transparency, accountability, and good government.
+          was migrated to his personal website. The dashboard relies on publicly
+          available data from the City of Philadelphia and Pennsylvania's
+          Unified Judicial System.
         </p>
 
         <!-- List original data sources -->
@@ -99,8 +97,10 @@
         </p>
 
         <p>
-          The software behind this application is publicly available on the
-          <a href="https://github.com/nickhand" target="blank_">my GitHub:</a>:
+          The software behind this application is publicly available on
+          <a href="https://github.com/nickhand" target="blank_"
+            >Nick Hand's GitHub:</a
+          >:
         </p>
         <ul>
           <li>
@@ -136,8 +136,7 @@
           how to make it better, please send an email to
           <a href="mailto:nicholas.adam.hand@gmail.com"
             >nicholas.adam.hand@gmail.com</a
-          >
-          to let me know.
+          >.
         </p>
       </div>
     </div>
